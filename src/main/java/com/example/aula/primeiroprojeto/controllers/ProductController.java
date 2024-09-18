@@ -94,7 +94,7 @@ public class ProductController {
 
     @PostMapping("/jpa")
     public ResponseEntity<Object> addProductJPA(@RequestBody @Valid ProductRecordDto productDto) throws  Exception{
-        String oi = "";
+        String oi = "aa";
         try{
             utx.begin();
             em.persist(productDto);
